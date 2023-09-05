@@ -63,42 +63,54 @@ assert add_two(5) == 7, "add_two with input 5 test"
 assert add_two(-2) == 0, "add_two with input -2 test"
 assert add_two(0) == 2, "add_two with input 0 test"
 
-# # Loops
+# Loops
 
-# # For Loop Template 1
-# # do something for each item in a list
-# lst = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
-# for el in lst:
-#     print(el)
+# For Loop Template 1
+# do something for each item in a list
+lst = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+num_list = [1, 34, 67, 98, 104, 76]
+s = 0
+for el in lst:
+    print(el)
+for el in num_list:
+    print(el)
+    s += el
+print(s)
 
-# # For Loop Template 2
-# # do something n times
-# for i in range(5):
-#     print("Intro to AI")
+# For Loop Template 2
+# do something n times
+for i in range(5):
+    print("Intro to AI")
+    print(i)
 
-# # For Loop Template 3
-# # do something for each item in a list but we care about the index
-# for r in range(len(lst)):
-#     if lst[r] == 'b':
-#         lst[r] = 'c'
+# For Loop Template 3
+# do something for each item in a list but we care about the index
+print(lst)
+for r in range(len(lst)):
+    print(r)
+    if lst[r] == 'b':
+        lst[r] = 'c'
 
-# print(lst)
+print(lst)
 
-# # Dictionaries
+# Dictionaries
 
-# dict = {"name": "rob", "age": 30}
-# print(dict["age"])
+dict = {"name": "rob", "age": 40}
+print(dict)
+print(dict["age"])
+print(dict["name"])
 
-# # Random
-# import random
+# Random
+import random
 
-# food = ['pizza', 'carrots', 'eggs']
-# dinner = random.choice(food)
-# print(dinner)
+food = ['pizza', 'carrots', 'eggs']
+dinner = random.choice(food)
+print(dinner)
 
-# # f String
-# age = 25
-# # print("Mary is " + age + " years old")
-# print(f"Mary is {age} years old")
+# f String
+age = 25
+# print("Mary is" , age , "years old")
+print(f"Mary is {age} years old")
 
+str = f"Mary is {age} years old"
 

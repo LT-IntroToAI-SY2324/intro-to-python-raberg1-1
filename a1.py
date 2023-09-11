@@ -60,7 +60,12 @@ def every_other(lst: List[T]) -> List[T]:
     Returns:
         a list of every of other item in the original list starting with the first
     """
-    raise NotImplementedError("every_other")
+    # new_list = []
+    # for i in range(len(lst)):
+    #     if i % 2 == 0:
+    #         new_list.append(lst[i])
+    # return new_list
+    return lst[::2]
 
 
 def sum_list(lst: List[int]) -> int:
